@@ -1,28 +1,20 @@
-# Shahed Salong
+# Shahed Salong – website draft
 
-A responsive, multilingual (Swedish, English and Arabic) one-page website for Shahed Salong in Kristianstad.
+Demo one-page website for Shahed Salong, Västra Storgatan 59, Kristianstad. Swedish, English and Arabic (RTL). Single static `index.html`, no build step.
 
-## Features
-- Editorial Scandinavian-inspired visual design
-- Responsive mobile navigation
-- Swedish, English and Arabic language switcher (Arabic uses RTL layout)
-- Service overview, gallery, contact details and Google Maps directions
-- Accessible navigation labels, reduced-motion support and lazy-loaded imagery
-- SEO and social-sharing metadata
-- No framework, build step, API key or paid service required
+**Status: DRAFT / DEMO.** The page shows a "DEMO · Förslag till ny webbplats" banner and is set to `noindex, nofollow`. It is not an official site of the salon.
 
-## Deploy
-The site is a static `index.html`. It can be deployed directly with GitHub Pages, Netlify, Vercel or any static host.
-
-For GitHub Pages: open **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save.
-
-## Business details to confirm before publishing
-The contact phone, street address and map coordinates currently reflect information gathered during the project conversation. Confirm these with the salon owner before advertising them. Opening hours and prices are intentionally not stated as facts; the site asks visitors to contact the salon for current information.
-
-The treatment descriptions are general presentation copy. Confirm the salon actually offers each service before launch.
-
-## Images
-The current layout uses remote Unsplash images as visual placeholders. Replace them with real salon photos (with permission) for an authentic final website.
+## Before going live (checklist)
+1. Get the owner's approval.
+2. Confirm opening hours (currently copied from the salon's Google Maps listing: Mon–Sat 10:30–23:00, Sun 11:30–20:00).
+3. Get a real price list and add it; remove the "Ring eller skriv för pris" placeholders.
+4. Confirm the services offered (haircuts for women and men; colour and styling copy is general).
+5. Replace all hotlinked Google Maps photos with the salon's own photos (with permission). Google image URLs can expire.
+6. Remove the draft banner (`.draft-note`) and the `<meta name="robots" content="noindex, nofollow">` tag.
+7. Reviews are shown anonymously as "Google-recension". Keep names out unless the reviewers agree.
 
 ## Contact links
-The phone number is currently used for click-to-call links. Update all occurrences of `+46760099771` and the visible formatted number if the salon provides a different contact number.
+Phone, WhatsApp and SMS all use `+46760099771`. Search and replace that value, and the visible `076-009 97 71`, if the number changes.
+
+## Deploy
+GitHub Pages: **Settings → Pages → Deploy from a branch → main / (root)**. Any static host also works.
